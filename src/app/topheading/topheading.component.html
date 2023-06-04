@@ -1,0 +1,20 @@
+<div class="container-fluid mt-5">
+
+  <h4>Top Headlines</h4>
+
+  <div class="row">
+     <div *ngFor="let article of topheadingDisplay" class="col-lg-3">
+
+      <div class="box">
+        <img src="{{article.urlToImage}}" width="100%">
+        <h5 class="mt-2 mb-2">{{article.title}}</h5>
+        <p>{{article.description}}</p>
+        <a href="{{article.url}}" target="_black" class="btn btn-dark btn-sm mt-2">Read more</a>
+      </div>
+
+
+     </div>
+  </div>
+
+
+</div>
